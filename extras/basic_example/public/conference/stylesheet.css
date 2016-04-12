@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+    background: transparent url("/img/color.jpg") repeat scroll 0% 0% / cover !important;
+}
+
+/*------------------------------------------------------------------------------------------ control panel */
+.remoteStream {
+    width: 100% !important;
+}
+.colourfulBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+/*    padding-top: 10%;*/
+    background: transparent url("/img/color.jpg") repeat scroll 0% 0% / cover !important;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    overflow: hidden;
+/*    background: transparent url('/img/color.jpeg') repeat scroll 0% 0% / cover !important;*/
+}
+
+#backgroundVideo video {
+    width: 100% !important;
+    height: 200% !important;
+    object-fit: fill !important;
+}
+
+#ctrl-panel {
+    bottom: 40px;
+    z-index: 9999;
+    text-align: center;
+    background-color: rgba(25,255,255,0.7);
+    position: absolute;
+    width: 50%;
+    min-width: 200px;
+    margin: 0 auto;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    left: 25%;
+    right: 25%;
+}
+
+#power-panel {
+    position: absolute;
+    top: 0px;
+}
+
+.coloredBkgnd {
+    background: transparent url("img/color.jpeg") repeat scroll 0% 0% / cover !important;
+}
+
+#btn-close-modal {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.closebt {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------- Media Starts *
+
+@media (max-width: 960px) {
+#container-thumbs .items {
+	min-width: 50%;
+	max-width: 50%;
+}
+.animated {
+	visibility: visible;
+}
+.visible {
+	visibility: visible;
+}
+}
+@media (max-width:767px) {
+.navbar-nav {
+	margin-left: 0px!important;
+	float: none!important;
+}
+.animated {
+	visibility: visible;
+}
+.visible {
+	visibility: visible;
+}
+}
+@media (max-width: 480px) {
+#container-thumbs .items {
+	min-width: 100%;
+	max-width: 100%;
+}
+.animated {
+	visibility: visible;
+}
+.visible {
+	visibility: visible;
+}
+#video{
+	display:none;
+}
+#quotes {
+	background-image: none;
+	background-color:#151515;
+}
+#pricing {
+	background-image: none;
+	background-color:#151515;
+}
+.blog-page-heading {
+	background-image: none;
+	background-color:#151515;
+}
+.blog-single-post-heading {
+	background-image: none;
+	background-color:#151515;
+}
+#testimonials {
+	background-image: none;
+	background-color:#151515;
+}
+#social-media {
+	background-image: none;
+	background-color:#151515;
+}
+}
+*/

@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Conference</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="ieMediaStream.js"></script>
+    <script type="text/javascript" src="adapter.js"></script>
+    <script type="text/javascript" src="woogeen.sdk.js"></script>
+    <script type="text/javascript" src="woogeen.sdk.ui.js"></script>
+    <script type="text/javascript" src="tiny.js"></script>
+  </head>
+
+  <body>
+      <script type="text/javascript">
+        function create()
+        {
+            roomName = document.getElementById('roomName');
+            pin = document.getElementById('roomPin');
+            
+            createRoom(roomName.value, pin.value, function(response){
+                console.log('room creation :'+response);
+            });
+        }
+          
+        function join()
+        {
+            roomId = document.getElementById('joinRoomId');
+            roomPin = document.getElementById('joinRoomPin');
+            
+            createToken(roomId.value, roomPin.value, "test user", "presenter", function(response){
+                console.log('join response :'+response);
+            });
+        }
+      </script>
+      <input type="text" id="roomName" placeholder="Room Name"/>
+      <input type="password" id="roomPin" placeholder="PIN"/>
+      <button onclick="create()">Create</button>
+      <ul id="roomList"></ul>
+      <input type="text" id="joinRoomId" placeholder="Room ID"/>
+      <input type="password" id="joinRoomPin" placeholder="PIN"/>
+      <button onclick="join()">Join</button>
+  </body>
+</html>
+      

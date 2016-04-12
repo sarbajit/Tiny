@@ -1,0 +1,1 @@
+var permission={};permission.PUBLISH="publish",permission.SUBSCRIBE="subscribe",permission.RECORD="record",permission.DATA="data",permission.AUDIO="audio",permission.VIDEO="video",permission.SCREEN="screen",module.exports=permission;

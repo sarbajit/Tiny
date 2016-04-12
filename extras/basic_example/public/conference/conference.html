@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Conference</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="jquery-1.11.0.min.js"></script>
+  </head>
+
+  <body>
+    <div id="animatedModal">
+                <div class="modal-content">
+                    
+<!--                    <div id="myVideo"></div>-->
+                    <div id="remoteVideo"></div>
+                </div>
+                <div id="ctrl-panel">
+                    <div id="btn-close-modal" class="close-animatedModal"> 
+<!--                        <img class="closebt" src="img/end.png">-->
+                    </div> 
+
+                </div> 
+                    
+            </div>
+      <div id="power-panel">
+          
+          <form action="http://localhost:10000/init/shutdown.cgi" method="post">
+            <input type="submit" value="Shutdown" name="confirm">
+          </form>
+          <form action="http://localhost:10000/init/reboot.cgi" method="post">
+            <input type="submit" value="Reboot" name="confirm">
+          </form>
+      </div>
+    
+    <script type="text/javascript" src="ieMediaStream.js"></script>
+    <script type="text/javascript" src="adapter.js"></script>
+    <script type="text/javascript" src="woogeen.sdk.js"></script>
+    <script type="text/javascript" src="woogeen.sdk.ui.js"></script>
+    <script type="text/javascript" src="DetectRTC.js"></script>  
+    <script type="text/javascript" src="rtc.js"></script>
+  </body>
+</html>
